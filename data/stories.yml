@@ -1,0 +1,269 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+
+- story: required_Documents
+  steps:
+  - intent: Documents_required
+  - action: utter_Documents_required
+
+- story: Refund Admission
+  steps:
+  - intent: Refund_Admission
+  - action: utter_Refund_Admission
+
+
+- story: Waiting List
+  steps:
+  - intent: Waiting_List
+  - action: utter_Waiting_ListResponse
+
+
+- story: Result Published
+  steps:
+  - intent: Result_Published
+  - action: utter_Result_PublishedResponse
+
+
+- story: Chance Merit
+  steps:
+  - intent: Chance_Merit
+  - action: utter_Chance_MeritResponse
+
+
+- story: Seat plan
+  steps:
+  - intent: Seatplan
+  - action: utter_SeatplanReponse
+
+
+- story: Migration_Way
+  steps:
+  - intent: Migration
+  - action: utter_MigrationResponse
+
+- story: Marks With CG
+  steps:
+  - intent: Marks_With_CG
+  - action: utter_Marks_With_CGResponse
+
+
+- story: Admission Notice
+  steps:
+  - intent: AdmissionNotice
+  - action: utter_AdmissionNoticeResponse
+
+
+- story: Merit Position
+  steps:
+  - intent: MeritPosition
+  - action: utter_MeritPositionResponse
+
+
+- story: Admission Fee
+  steps:
+  - intent: AdmissionFee
+  - action: utter_AdmissionFeeResponse
+
+
+- story: Hall Fee
+  steps:
+  - intent: HallFee
+  - action: utter_HallFeeReponse
+
+
+- story: CSE chance
+  steps:
+  - intent: CSEchance
+  - action: utter_CSEchanceResponse
+
+
+- story: SEC Location
+  steps:
+  - intent: SECLocation
+  - action: utter_SECLocationResponse
+
+
+- story: SEC Departments
+  steps:
+  - intent: SECDepartments
+  - action: utter_SECDepartmentsResponse
+
+
+- story: Teacher CSE
+  steps:
+  - intent: TeacherCSE
+  - action: utter_TeacherCSEResponse
+  
+
+- story: admission exam
+  steps:
+  - intent: AdmissionExam
+  - action: utter_AdmissionExamResponse
+
+
+- story: circular release date
+  steps:
+  - intent: CircularReleaseDate
+  - action: utter_CircularReleaseDateResponse
+  
+- story: circular release time
+  steps:
+  - intent: CircularReleaseTime
+  - action: utter_CircularReleaseTimeResponse
+
+
+- story: question type
+  steps:
+  - intent: QuestionType
+  - action: utter_QuestionTypeResponse
+
+
+- story: question bank 
+  steps:
+  - intent: QuestionBank
+  - action: utter_QuestionBankResponse
+
+
+- story: after GST
+  steps:
+  - intent: After_GST
+  - action: utter_After_GSTResponse
+
+
+- story: admission marks
+  steps:
+  - intent: Admission_Marks
+  - action: utter_Admission_MarksResponse
+
+
+- story: sec government govt
+  steps:
+  - intent: SEC_GOVT
+  - action: utter_SEC_GOVTResponse
+
+- story: sec study duration
+  steps:
+  - intent: SEC_Study_Duration
+  - action: utter_SEC_Study_DurationResponse
+  
+- story: admission reading style
+  steps:
+  - intent: Admission_Reading_Style
+  - action: utter_Admission_Reading_StyleResponse
+
+- story: sec application
+  steps:
+  - intent: SEC_Application
+  - action: utter_SEC_ApplicationResponse
+
+- story: sec question type
+  steps:
+  - intent: SEC_Question_Type
+  - action: utter_SEC_Question_TypeResponse
+
+- story: marks time
+  steps:
+  - intent: Marks_TIME
+  - action: utter_Marks_TIMEResponse
+
+- story: eee chance
+  steps:
+  - intent: EEE_Chance
+  - action: utter_EEE_ChanceResponse
+
+- story: ce chance
+  steps:
+  - intent: CE_Chance
+  - action: utter_CE_ChanceResponse
+
+- story: question demo 
+  steps:
+  - intent: Question_Demo
+  - action: utter_Question_DemoResponse
+
+- story: English Preparation
+  steps:
+  - intent: English_Preparation
+  - action: utter_English_PreparationResponse
+
+- story: Establishment establish date
+  steps:
+  - intent: Establish_date
+  - action: utter_Establish_dateResponse
+
+- story: Type of College
+  steps:
+  - intent: TypeofCollege
+  - action: utter_TypeofCollegeResponse
+
+- story: affiliation with 
+  steps:
+  - intent: Affiliation
+  - action: utter_AffiliationResponse
+
+- story: Hostel Count
+  steps:
+  - intent: HostelCount
+  - action: utter_HostelCountResponse
+
+- story: Seat Count
+  steps:
+  - intent: SeatCount
+  - action: utter_SeatCountResponse
+
+
+- story: Grading System
+  steps:
+  - intent: GradingSystem
+  - action: utter_GradingSystemResponse
+
+- story: How to arrive in SEC
+  steps:
+  - intent: Howto_arrive_in_SEC
+  - action: utter_Howto_arrive_in_SECResponse
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  

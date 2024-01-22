@@ -1,0 +1,691 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - When will migration start?
+    - When will the migration process start?
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: n_flower
+  examples: |
+    - what is the national flower of Bangladesh?
+    - what can be the national flower of Bangladesh?
+    - What is Bangladesh's national flower?
+    - What is the Bangladeshi country's national flower?
+
+
+
+- intent: Documents_required
+  examples: |
+    - Will I need anything other than SSC and HSC transcript to get admission in the SEC?
+    - Is there a requirement for additional documents beyond my SSC and HSC transcripts for SEC admission?
+    - Are there any supplementary materials needed, in addition to my SSC and HSC transcripts, for admission to SEC?
+    - Do I need to submit any extra documents aside from my SSC and HSC transcripts to gain admission in SEC?
+    - Are there additional requisites, apart from my SSC and HSC transcripts, for securing admission in SEC?
+    - Will I have to provide any other documents besides my SSC and HSC transcripts to be admitted to SEC?
+    - Are there any extra documentations necessary, in addition to my SSC and HSC transcripts, for SEC admission?
+    - Do I need to furnish any additional paperwork, other than my SSC and HSC transcripts, for SEC admission?
+    - Are there any supplementary requirements beyond my SSC and HSC transcripts for securing admission in SEC?
+    - Will additional documents be needed, aside from my SSC and HSC transcripts, for gaining admission in SEC?
+    - Is there any other paperwork required, apart from my SSC and HSC transcripts, for admission to SEC?
+
+- intent: Refund_Admission
+  examples: |
+    - If I decide to cancel my admission today, can I expect a refund of the 13200 Taka admission fee?
+    - Will I receive a reimbursement of the 13200 Taka admission fee if I choose to cancel my admission today?
+    - In the event of canceling my admission today, is there a possibility of getting back the 13200 Taka admission fee?
+    - If I cancel my admission today, is a refund for the 13200 Taka admission fee available?
+    - Can I get a refund of the 13200 Taka admission fee if I cancel my admission today?
+    - Will the cancellation of my admission today result in a return of the 13200 Taka admission fee?
+    - If I opt to cancel my admission today, is there a procedure for refunding the 13200 Taka admission fee?
+    - Is it possible to get a refund for the 13200 Taka admission fee if I cancel my admission today?
+    - If I cancel my admission today, will the 13200 Taka admission fee be refunded to me?
+    - Can I expect a reimbursement of the 13200 Taka admission fee if I cancel my admission today?
+
+- intent: Waiting_List
+  examples: |
+    - When will the results of the waiting list be published?
+    - When can we expect the waiting list results to be announced?
+    - At what time will the waiting list outcomes be disclosed?
+    - When will the waiting list results be made public?
+    - What is the schedule for releasing the waiting list outcomes?
+    - When can we anticipate the publication of waiting list results?
+    - At what point will the waiting list results be revealed?
+    - What is the anticipated date for waiting list results to be published?
+    - When are the waiting list results expected to be released?
+    - What is the timeline for announcing the waiting list results?
+    - When will the information about the waiting list results become available?
+
+
+- intent: Result_Published
+  examples: |
+    - When is the anticipated release date for the results?
+    - At what time can we expect the results to be made public?
+    - When are the results expected to be disclosed?
+    - What is the schedule for releasing the results?
+    - When can we anticipate the publication of the results?
+    - At what point will the results be revealed?
+    - What is the expected date for the release of results?
+    - When are the results set to be made available?
+    - What is the timeline for announcing the results?
+    - When will the information about the results become accessible?
+
+
+- intent: Chance_Merit
+  examples: |
+    - What are the chances of 200 positions on the merit list?
+    - What is the likelihood of securing a position within the top 200 on the merit list?
+    - What are the odds of obtaining a rank among the first 200 on the merit list?
+    - What are the chances of being within the top 200 positions on the merit list?
+    - How probable is it to achieve a ranking within the top 200 on the merit list?
+    - What is the possibility of attaining one of the top 200 positions on the merit list?
+    - How likely is it to secure a place within the first 200 on the merit list?
+    - What are the chances of earning a spot within the top 200 positions on the merit list?
+    - How probable is it to be ranked among the first 200 on the merit list?
+    - What is the likelihood of obtaining one of the top 200 positions on the merit list?
+    - What are the odds of securing a position within the first 200 on the merit list?
+
+
+- intent: Seatplan
+  examples: |
+    - When is the release date for the seat plan?
+    - At what time will the seat plan be made public?
+    - When can we expect the publication of the seat plan?
+    - What is the schedule for releasing the seat plan?
+    - When will the seat plan be available for viewing?
+    - At what point will the seat plan be published?
+    - What is the anticipated date for seat plan publication?
+    - When is the seat plan expected to be released?
+    - What is the timeline for publishing the seat plan?
+    - When will the seat plan information become accessible?
+
+
+- intent: Migration
+  examples: |
+    - When will migration start?
+    - When will the migration process start?
+    - When does the migration process kick off?
+    - At what time will the migration process begin?
+    - What is the starting date for the migration process?
+    - When can we expect the migration process to start?
+    - At what point will the migration process initiate?
+    - When is the migration process scheduled to start?
+    - What is the initiation date for the migration process?
+    - When will the migration process officially begin?
+    - At what stage is the migration process set to start?
+
+- intent: Marks_With_CG
+  examples: |
+    - What is the total mark allocation in exam with SSC and HSC GPA?
+    - How are the total marks divided in the exam, incorporating both SSC and HSC GPAs?
+    - Can you explain the total mark distribution in the exam, taking into consideration both SSC and HSC GPAs?
+    - What is the breakdown of total marks in the exam, factoring in both SSC and HSC GPAs?
+    - How are the total marks allocated in the exam, considering both SSC and HSC GPAs?
+    - Can you provide information on the total mark allocation in the exam, considering both SSC and HSC GPAs?
+    - What is the total mark composition in the exam, incorporating both SSC and HSC GPAs?
+    - How is the total mark allocation structured in the exam, factoring in both SSC and HSC GPAs?
+    - Can you elaborate on the total mark breakdown in the exam, considering both SSC and HSC GPAs?
+    - What is the distribution of total marks in the exam, taking into account both SSC and HSC GPAs?
+    - How are the total marks distributed in the exam, factoring in both SSC and HSC GPAs?
+
+
+- intent: AdmissionNotice
+  examples: |
+    - Where can I find the notices related to admission ?  
+    - What is the source for accessing information about admission notices at Sylhet Engineering College?
+    - Where can I locate details regarding admission notices for Sylhet Engineering College?
+    - How can I find information about Sylhet Engineering College admission notices?
+    - What platform provides updates on admission notices for Sylhet Engineering College?
+    - Where should I check for the latest updates on Sylhet Engineering College admission notices?
+
+
+- intent: MeritPosition
+  examples: |
+    - How many students are selected for the first phase of admission ? 
+    - How many students are called on the first call for admission ? 
+    - What is the total number of students chosen for the initial stage of the admission process?
+    - How many students are selected in the first phase or call of the admission procedure?
+    - What is the count of students admitted during the initial phase of the admission process?
+    - In the first phase of admissions, how many students have been successfully chosen for admission?
+    - What is the number of students selected for admission in the initial phase?
+    - Total how many students are called on the first call for getting admitted ? 
+    - How many students are called for subject choice and admission on the first call ? 
+
+
+- intent: AdmissionFee
+  examples: |
+    - What is the admission fee for Sylhet Engineering College? 
+    - What does Sylhet Engineering College charge as its admission fee?
+    - How much is the admission fee at Sylhet Engineering College?
+    - What is the cost associated with admission at Sylhet Engineering College?
+    - How is the admission fee structured for Sylhet Engineering College?
+    - Can you provide information about the admission fee at Sylhet Engineering College?
+    - What amount is required for admission at Sylhet Engineering College?
+    - How do I find details about the admission fee for Sylhet Engineering College?
+    - What is the fee structure for admission to Sylhet Engineering College?
+    - Could you tell me the amount of the admission fee at Sylhet Engineering College?
+    - What financial requirement is associated with the admission process at Sylhet Engineering College?
+
+- intent: HallFee
+  examples: |
+    - What is the hall admission fee? 
+    - What is the hall monthly fee ?
+    - How much does it cost to secure admission to the hall?
+    - What is the fee for admission to the hall?
+    - What amount is required for hall admission?
+    - How is the hall admission fee structured?
+    - Can you provide information about the cost of hall admission?
+    - How much is the monthly fee for the hall?
+    - What does it cost per month to stay in the hall?
+    - What is the monthly fee for hall accommodation?
+    - How is the monthly fee structured for the hall?
+    - Can you provide information about the monthly cost for hall residency?
+    - What is the hall fee in per semester? 
+    - How much is the hall fee per semester?
+    - What is the cost of hall accommodation for a single semester?
+    - Can you provide information about the hall fee for each semester?
+    - How is the hall fee structured on a semester basis?
+    - What amount is required for hall accommodation per semester?
+
+
+- intent: CSEchance
+  examples: |
+    - Will I get CSE ? 
+    - What merit positions will get CSE ? 
+    - Will I get computer science ? 
+    - My position is 40, will I get computer science ? 
+    - My position is 120, will I get CSE ? 
+    - What are my chances of getting CSE ? 
+    - Which students generally get CSE from the merit position ? 
+    - How many students will get in the CSE department on admission ? 
+
+
+- intent: SECLocation
+  examples: |
+    - Where is SEC located ? 
+    - Where is Sylhet Engineering College located ? 
+    - Where is the campus of SEC ? 
+    - Where is SEC campus located ? 
+    - Is Sylhet Engineering College inside Sylhet city ? 
+    - SEC location ? 
+    - Sylhet Engineering College campus area ? 
+
+
+- intent: SECDepartments
+  examples: |
+    - How many departments are there in SEC ? 
+    - How many departments are there in Sylhet Engineering College ? 
+    - How many departments ? 
+    - In total, how many departments teach courses in SEC ? 
+    - How many academic departments does Sylhet Engineering College have?
+    - Can you tell me the number of departments in Sylhet Engineering College?
+    - What is the total count of departments at Sylhet Engineering College?
+    - How many different departments are present in Sylhet Engineering College?
+
+
+- intent: TeacherCSE
+  examples: |
+    - How many lecturers in CSE ? 
+    - How many teachers in CSE department ? 
+    - How many teachers in Computer Science and Engineering department ? 
+    - How many lecturers are currently teaching in CSE department ? 
+
+
+- intent: AdmissionExam
+  examples: |
+    - When will the admission examination of SEC begin?
+    - What time does the SEC admission examination start?
+    - At what time will the SEC admission examination begin?
+    - When can we expect the initiation of the SEC admission examination?
+    - At what hour is the SEC admission examination scheduled to start?
+    - When is the slated start time for the SEC admission examination?
+    - What time does the SEC admission examination kick off?
+    - When is the SEC admission examination set to commence?
+    - What is the starting time for the SEC admission examination?
+    - When does the SEC admission examination officially get underway?
+
+
+- intent: CircularReleaseDate
+  examples: |
+    - When is the expected release date for the circular of 2023-2024?
+    - At what time will the circular for 2023-2024 be made public?
+    - When can we anticipate the publication of the 2023-2024 circular?
+    - What is the scheduled release date for the 2023-2024 circular?
+    - When will the 2023-2024 circular be officially unveiled?
+    - At what point in time is the publication of the 2023-2024 circular planned?
+    - When can we expect the 2023-2024 circular to be disclosed?
+    - What is the designated date for the release of the 2023-2024 circular?
+    - When is the slated time for publishing the 2023-2024 circular?
+    - At what hour will the circular for 2023-2024 become available?
+
+
+ 
+- intent: CircularReleaseTime
+  examples: |
+    - How many days in advance is the exam circular typically provided each year?
+    - What is the customary timeframe for issuing the exam circular each year?
+    - In advance of the exam, how many days beforehand is the circular usually distributed annually?
+    - How much lead time is there before the exam for the annual release of the circular?
+    - Before the exam, how many days prior is the customary release period for the circular?
+    - What is the standard number of days before the exam for the issuance of the annual circular?
+    - How many days before the exam is the traditional timeframe for circulating the annual circular?
+    - Before the exam, how many days beforehand is the circular typically distributed each year?
+    - In the annual schedule, how many days ahead of the exam is the circular usually given?
+    - What is the typical lead time for the release of the circular before the exam each year?
+
+
+- intent: QuestionType
+  examples: |
+    - What kinds of questions are typically included in the exam?
+    - Can you describe the usual format of questions found in the exam?
+    - What is the nature of questions commonly presented in the exam?
+    - Could you elaborate on the typical question types featured in the exam?
+    - In general, what type of questions can one expect in the exam?
+    - How are the questions typically structured in the exam?
+    - What are the customary question formats found in the exam?
+    - Can you provide insights into the typical questioning style employed in the exam?
+    - What variations of questions are commonly encountered in the exam?
+    - Describe the standard question types that are generally given in the exam.
+
+
+- intent: QuestionBank
+  examples: |
+    - Can the question bank for SEC be obtained as a separate entity?
+    - Is there an option to acquire the SEC question bank separately?
+    - Is the SEC question bank available independently from other resources?
+    - Can one access the question bank for SEC as a standalone resource?
+    - Is there a standalone version of the question bank specifically for SEC?
+    - Is the question bank for SEC offered as a separate resource?
+    - Can individuals obtain the SEC question bank separately from the examination materials?
+    - Is there a dedicated standalone version of the question bank for SEC?
+    - Can the question bank for SEC be acquired independently of other study materials?
+    - Is the SEC question bank available as a distinct resource on its own?
+
+
+- intent: After_GST
+  examples: |
+    - After the conclusion of the GST admission test, how many days will pass before the SEC admission test begins?
+    - Following the completion of the GST admission test, what is the time gap until the start of the SEC admission test?
+    - How many days elapse between the end of the GST admission test and the commencement of the SEC admission test?
+    - What is the duration in days from the conclusion of the GST admission test to the start of the SEC admission test?
+    - After the GST admission test concludes, when is the SEC admission test scheduled to start?
+    - What is the waiting period between the conclusion of the GST admission test and the initiation of the SEC admission test?
+    - Following the GST admission test, how many days will transpire before the SEC admission test gets underway?
+    - How much time passes between the conclusion of the GST admission test and the commencement of the SEC admission test?
+    - After the GST admission test concludes, when is the SEC admission test set to commence?
+    - What is the interval between the end of the GST admission test and the beginning of the SEC admission test?
+
+
+- intent: Admission_Marks
+  examples: |
+    - Is it possible to achieve a score of 100 in the SEC admission test without having any GPA marks?
+    - Can one attain a perfect score of 100 in the SEC admission test without any GPA marks?
+    - What are the odds of scoring 100 in the SEC admission test without any GPA marks?
+    - Is there a possibility of obtaining a full score of 100 without GPA marks in the SEC admission test?
+    - Can a candidate secure a perfect score of 100 in the SEC admission test without having any GPA marks?
+    - What is the likelihood of getting 100 in the SEC admission test without any GPA marks?
+    - Is it feasible to achieve a perfect score of 100 without any GPA marks in the SEC admission test?
+    - Can one earn a score of 100 in the SEC admission test even without having GPA marks?
+    - What are the chances of obtaining a perfect score of 100 in the SEC admission test without GPA marks?
+    - Is there a possibility of scoring 100 in the SEC admission test without any consideration for GPA marks?
+
+
+- intent: SEC_GOVT
+  examples: |
+    - Sylhet Engineering College is a government institution, isn't it?
+    - Is Sylhet Engineering College a government-operated institution?
+    - Does Sylhet Engineering College fall under the government category?
+    - Is Sylhet Engineering College administered by the government?
+    - Sylhet Engineering College is under the governance of the government, correct?
+    - Is Sylhet Engineering College classified as a government college?
+    - Does the government oversee Sylhet Engineering College?
+    - Sylhet Engineering College is a government institution, is that correct?
+    - Is the management of Sylhet Engineering College affiliated with the government?
+    - Does Sylhet Engineering College operate as a government-run facility?
+
+
+- intent: SEC_Study_Duration
+  examples: |
+    - What is the duration required to complete the education?
+    - How many years does it typically take to finish the education?
+    - What is the usual time frame for completing the education?
+    - In how many years can one complete the entire education program?
+    - How long does it usually take to fulfill the education requirements?
+    - What is the standard timeframe for education completion?
+    - How many years are necessary to successfully conclude the education?
+    - What is the typical duration for completing the entire education process?
+    - In how many years can one expect to complete the education?
+    - How much time is generally needed to finish the education program?
+
+
+
+- intent: Admission_Reading_Style
+  examples: |
+    - Should your preparation for admission to Sylhet Engineering College align with university regulations, or does it require a different approach based on engineering admission rules?
+    - Is it advisable to follow university guidelines or adopt a distinct strategy in preparation for admission to Sylhet Engineering College in accordance with engineering admission rules?
+    - Is reading for admission in Sylhet Engineering College best approached by adhering to university protocols, or does it demand a unique approach based on engineering admission rules?
+    - When preparing for admission to Sylhet Engineering College, should one adhere to university norms, or does it necessitate a specialized strategy based on engineering admission rules?
+    - Is it recommended to follow the university's guidelines or adopt a separate method when reading for admission to Sylhet Engineering College, considering engineering admission rules?
+    - When gearing up for admission to Sylhet Engineering College, should the reading approach align with university regulations, or does it require a distinct method in line with engineering admission rules?
+    - Is it preferable to follow the university's rules or take a different approach when reading for admission to Sylhet Engineering College, considering engineering admission rules?
+    - Should the preparation for admission to Sylhet Engineering College be in accordance with university rules, or is a different approach needed based on engineering admission rules?
+    - When reading for admission to Sylhet Engineering College, should one follow the university's standards, or is there a need for a different approach in line with engineering admission rules?
+    - Is it more effective to read for admission in Sylhet Engineering College according to university rules, or does it require a distinct method based on engineering admission rules?
+
+
+- intent: SEC_Application
+  examples: |
+    - What is the procedure for submitting an application to SEC?
+    - How can one initiate the application process for SEC?
+    - What steps are involved in applying to SEC?
+    - How does one go about the application process for SEC?
+    - Can you outline the process of applying to SEC?
+    - What is the method for submitting an application to SEC?
+    - How should one proceed with applying to SEC?
+    - What are the steps to follow when applying to SEC?
+    - What is the protocol for submitting an application to SEC?
+    - How does one complete the application procedure for SEC?
+
+
+- intent: SEC_Question_Type
+  examples: |
+    - Is the SEC exam conducted using a combination of essay and multiple-choice questions?
+    - In the SEC exam, are questions presented in a mix of open-ended and multiple-choice formats?
+    - Does the SEC exam consist of both conventional and multiple-choice questions?
+    - Is the SEC exam designed with a combination of both essay-type and multiple-choice questions?
+    - Are the SEC exam questions a combination of open-ended and multiple-choice formats?
+    - In the SEC exam, are candidates assessed through a combination of descriptive and multiple-choice questions?
+    - Does the SEC exam include both essay-style and multiple-choice questions?
+    - Is the SEC exam structured with a mix of conventional and multiple-choice questions?
+    - Are candidates in the SEC exam evaluated through a blend of open-ended and multiple-choice questions?
+    - Does the SEC exam incorporate both essay and multiple-choice question types?
+
+
+
+- intent: Marks_TIME
+  examples: |
+    - What is the total mark allocation and time duration for the SEC exam?
+    - Could you provide details on the allotted marks and duration for the SEC exam?
+    - What is the marking scheme and time limit for the SEC exam?
+    - How many marks are assigned, and what is the time constraint for the SEC exam?
+    - Can you specify the total marks and time duration for the SEC exam?
+    - What is the breakdown of marks and time allowed for the SEC exam?
+    - Could you elaborate on the marking system and time allocation for the SEC exam?
+    - What is the total marks and duration set for the SEC exam?
+    - Can you share information on the marking criteria and time frame for the SEC exam?
+    - How much time is provided, and what is the total marks assigned for the SEC exam?
+
+
+- intent: EEE_Chance
+  examples: |
+    - What is the approximate score required for EEE, considering the chance of acceptance?
+    - Can you provide an estimated mark range for EEE, representing the likelihood of acceptance?
+    - What is the likely score needed for EEE to enhance the chances of acceptance?
+    - Could you share the anticipated marks that would increase the chances of acceptance into EEE?
+    - What is the expected mark range that would offer a reasonable chance for admission into EEE?
+    - Can you give an approximate score that would be favorable for acceptance into EEE?
+    - What is the general mark range that tends to increase the likelihood of acceptance in EEE?
+    - Could you provide an estimate of the marks that would improve the chances of getting into EEE?
+    - What approximate marks are typically associated with a good chance of acceptance in EEE?
+    - Can you suggest an expected mark range that would enhance the likelihood of admission into EEE?
+  
+- intent: CE_Chance
+  examples: |
+    - What is the estimated score that would provide a reasonable chance of admission into CE?
+    - Can you share the approximate marks that would enhance the likelihood of acceptance in CE?
+    - What is the anticipated mark range that typically offers a chance for admission into CE?
+    - Could you provide an estimated score that increases the likelihood of acceptance in CE?
+    - What approximate marks are generally associated with a chance of admission into CE?
+    - Can you suggest a mark range that would be favorable for acceptance into CE?
+    - What is the expected score that tends to improve the chances of admission into CE?
+    - Could you share an approximate mark range that is typically considered for admission into CE?
+    - Can you give an estimate of the marks that would increase the likelihood of acceptance in CE?
+    - What approximate score is usually associated with a good chance of admission into CE?
+
+
+- intent: Question_Demo
+  examples: |
+    - Is it possible to access a demonstration of previous year's questions?
+    - Can we obtain a sample of questions from the previous year?
+    - Is there a demo available for questions from the previous year?
+    - Can we review a trial version of questions from the preceding year?
+    - Is there a preview of questions from the previous year that we can access?
+    - Are there examples or demos of questions from the previous year that can be provided?
+    - Can we get a glimpse of questions from the previous year as a demonstration?
+    - Is there a way to access a trial or demonstration of questions from the past year?
+    - Can we view sample questions from the previous year for demonstration purposes?
+    - Is there a demonstration available for questions from the preceding year?
+
+
+- intent: English_Preparation
+  examples: |
+    - What is the recommended approach for preparing for the English section?
+    - How should one get ready for the English portion of the exam?
+    - Can you provide guidance on preparing for the English segment?
+    - What is the suggested method for getting prepared for the English part?
+    - How can one effectively study for the English section?
+    - What strategies are recommended for English section preparation?
+    - What is the advised way to prepare for the English part of the exam?
+    - How should candidates go about studying for the English section?
+    - Can you offer tips on how to best prepare for the English segment?
+    - What is the recommended study plan for the English part of the exam?
+
+- intent: Establish_date
+  examples: |
+    - What is the establishment date of Sylhet Engineering College?
+    - When was Sylhet Engineering College founded?
+    - Can you provide information on the founding date of Sylhet Engineering College?
+    - What is the inception year of Sylhet Engineering College?
+    - When was Sylhet Engineering College established and opened?
+    - Could you tell me the establishment year of Sylhet Engineering College?
+    - What is the founding year of Sylhet Engineering College?
+    - When did Sylhet Engineering College start its operations?
+    - Can you specify the year in which Sylhet Engineering College was established?
+    - What is the establishment date of Sylhet Engineering College?
+    - When was Sylhet Engineering College established ?
+    - What is the establishment date of SEC?
+    - When was SEC founded?
+    - Can you provide information on the founding date of SEC?
+    - What is the inception year of SEC?
+    - When was SEC established and opened?
+    - Could you tell me the establishment year of SEC?
+    - What is the founding year of SEC?
+    - When did SEC start its operations?
+    - Can you specify the year in which SEC was established?
+    - What is the establishment date of SEC?
+    - When was SEC established ?
+
+
+- intent: TypeofCollege
+  examples: |
+    - What kind of college is Sylhet Engineering College?
+    - Can you describe the type of institution Sylhet Engineering College is?
+    - What category does Sylhet Engineering College fall under as a college?
+    - How would you classify Sylhet Engineering College in terms of type?
+    - In what genre does Sylhet Engineering College fit as a college?
+    - What classification applies to Sylhet Engineering College?
+    - What is the nature or type of Sylhet Engineering College?
+    - How is Sylhet Engineering College characterized in terms of type?
+    - Can you provide information about the category of Sylhet Engineering College?
+    - How would you define the type of college that Sylhet Engineering College is?
+    - What type of College is Sylhet Engineering College? 
+
+
+
+- intent: Affiliation
+  examples: |
+    - Is the campus associated with any external affiliations?
+    - Are there any affiliations connected with the campus?
+    - Does the campus have any affiliations with other entities?
+    - Is the campus affiliated with any external organizations or institutions?
+    - Are there any affiliations linked to the campus?
+    - Does the campus maintain affiliations with external entities?
+    - Are there any affiliations that the campus is part of?
+    - Is the campus associated with any external affiliations or institutions?
+    - Does the campus have affiliations with other organizations?
+    - Are there any external affiliations connected to the campus?
+    - Is the campus affiliated with anything ?
+
+
+- intent: HostelCount
+  examples: |
+    - How many hostels are there in SEC ? 
+    - How many hostels are there in Sylhet Engineering College ? 
+    - How many halls are there in SEC ?
+    - How many halls are there in Sylhet Engineering College ? 
+    - How many hostels or halls are there for females in SEC ? 
+    - How many hostels or halls are there for females in Sylhet Engineering College ? 
+    - How many hostels or halls are there for boys in SEC ? 
+    - How many hostels or halls are there for males in SEC ? 
+    - How many hostels or halls are there for girls in SEC ? 
+
+
+- intent: SeatCount
+  examples: |
+    - What is the total number of seats across all departments?
+    - Can you provide information about the aggregate number of seats in all departments?
+    - How many seats are available in total for all departments?
+    - What is the cumulative count of seats across all departments?
+    - Could you tell me the overall number of seats in all the departments?
+    - Can you specify the total seat count encompassing all departments?
+    - How many seats are there collectively in all the departments?
+    - What is the combined number of seats across all departments?
+    - Can you provide the total seat capacity for all departments?
+    - How many seats are available in total for enrollment across all departments?
+    - How many seats are there in all the departments? 
+
+
+- intent: GradingSystem
+  examples: |
+    - How is the grading system structured in this institution?
+    - Can you provide information about the grading system adopted at this academic institution?
+    - What kind of grading system is in place here?
+    - How are students graded at this educational institution?
+    - Could you elaborate on the grading system used in this establishment?
+    - What is the format of the grading system implemented at this institution?
+    - Can you explain the grading criteria applied in this academic setting?
+    - How do students receive grades in this particular educational environment?
+    - What grading scale is employed at this institution?
+    - Could you describe the grading system that is in use here?
+    - What is the grading system here? 
+    - What is the grading system in SEC? 
+    - What is the grading system in Sylhet Engineering College? 
+    - Is the grading system in CGPA?
+
+
+- intent: Howto_arrive_in_SEC
+  examples: |
+    - What is the process for reaching SEC?
+    - Can you guide me on the route to SEC?
+    - How do I navigate my way to SEC?
+    - What is the way to get to SEC?
+    - Can you provide directions to SEC?
+    - How can I reach SEC from my current location?
+    - What is the best route to reach SEC?
+    - Can you give me directions on how to reach SEC?
+    - What is the recommended way to come to SEC?
+    - How do I find my way to SEC?
+    - How can I arrive in Sylhet Engineering College as I am outside of Sylhet?
+    - How can I attend the exam from outside of Sylhet? 
+    - How can I arrive in SEC as I am outside of Sylhet?
+    - How can I come to SEC ? 
+    - What is the way to reach SEC from the railway station ? 
+    - What is the way to reach SEC from the bus station ?
+
+- intent: SEC_Intro
+  examples: |
+    - What is SEC?
+    - Introduce SEC.
+    - Tell about SEC.
+
+
+
+
+
+
+
+
+
+
+
+
+

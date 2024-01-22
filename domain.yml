@@ -1,0 +1,372 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - n_flower
+  - Documents_required
+  - Refund_Admission
+  - Waiting_List
+  - Result_Published
+  - Chance_Merit
+  - Seatplan
+  - Migration
+  - Marks_With_CG 
+  - AdmissionNotice
+  - MeritPosition
+  - AdmissionFee
+  - HallFee
+  - CSEchance
+  - SECLocation
+  - SECDepartments
+  - TeacherCSE
+  - AdmissionExam
+  - CircularReleaseDate
+  - CircularReleaseTime
+  - QuestionType
+  - QuestionBank
+  - After_GST
+  - Admission_Marks
+  - SEC_GOVT
+  - SEC_Study_Duration
+  - Admission_Reading_Style
+  - SEC_Application
+  - SEC_Question_Type
+  - Marks_TIME
+  - EEE_Chance
+  - CE_Chance
+  - Question_Demo
+  - English_Preparation
+  - Establish_date
+  - TypeofCollege
+  - Affiliation
+  - HostelCount
+  - SeatCount
+  - GradingSystem
+  - Howto_arrive_in_SEC
+  - SEC_Intro
+
+
+
+
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "From 26th September"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_flower:
+  - text: "Water Lily is the national flower of Bangladesh."
+
+
+  utter_Documents_required:
+  - text: "Yes, you will need HSC Registration Card along with SSC and HSC transcripts for admission to SEC."
+  - text: "Yes, for SEC admission, you'll need the HSC Registration Card in addition to your SSC and HSC transcripts."
+  - text: "To secure admission in SEC, the HSC Registration Card, along with your SSC and HSC transcripts, is required."
+  - text: "The HSC Registration Card is mandatory, along with SSC and HSC transcripts, for admission to SEC."
+  - text: "For admission to SEC, it is necessary to present the HSC Registration Card along with your SSC and HSC transcripts."
+  - text: "To gain admission in SEC, the HSC Registration Card is essential, along with your SSC and HSC transcripts."
+
+
+  utter_Refund_Admission:
+  - text: "No, you will not receive the full refund; perhaps only 5000 Taka will be refunded."
+  - text: "There won't be a complete refund; you may receive around 5000 Taka back."
+  - text: "You won't get the entire amount back; there might be a refund of approximately 5000 Taka."
+  - text: "The full refund is not applicable; you might be refunded around 5000 Taka."
+  - text: "The refund won't cover the full amount; around 5000 Taka may be refunded."
+
+  utter_Waiting_ListResponse:
+  - text: "The waiting list will be published around one or two weeks from now."
+  - text: "Expect the waiting list to be released within a span of one to two weeks."
+  - text: "Quotations for the waiting list will be available in approximately one or two weeks."
+  - text: "The waiting list is scheduled to be disclosed around one or two weeks from now."
+  - text: "Anticipate the waiting list to be published in roughly one to two weeks."
+
+  utter_Result_PublishedResponse:
+  - text: "The result will be published within one or two days after the exam."
+  - text: "Expect the result to be released in approximately one or two days following the exam."
+  - text: "Quotations indicate that the result will be available within one or two days post-exam."
+  - text: "The result is scheduled to be disclosed around one or two days after the exam."
+  - text: "Anticipate the publication of the result roughly one to two days after the exam."
+
+  utter_Chance_MeritResponse:
+  - text: "Indeed, there is a 100% chance that you will secure a seat, possibly in Civil Engineering."
+  - text: "You can be assured, with a 100% certainty, that you will be allocated a seat, potentially in Civil Engineering."
+  - text: "You are guaranteed a seat, and there's a 100% chance it could be in Civil Engineering."
+  - text: "Rest assured, there is a 100% probability that you will be granted a seat, possibly in Civil Engineering."
+  - text: "With certainty, there is a 100% chance that you will be assigned a seat, maybe in Civil Engineering."
+
+  utter_SeatplanReponse:
+  - text: "The seat plan will be published two or three days before the exam."
+  - text: "Expect the seat plan to be released two to three days prior to the exam."
+  - text: "Quotations for seat arrangements will be available two or three days before the exam."
+  - text: "Approximately two or three days before the exam, the seat plan will be disclosed."
+  - text: "The publication of the seat plan is scheduled two or three days before the exam."
+
+  utter_MigrationResponse:
+  - text: "Migration is expected to commence approximately two weeks from now."
+  - text: "Around two weeks from now, the migration process is set to begin."
+  - text: "In about two weeks, the migration will initiate."
+  - text: "Approximately two weeks from now, the migration process will start."
+  - text: "Expect the migration to begin in roughly two weeks from now."
+
+  utter_Marks_With_CGResponse:
+  - text: "It will be addressed in the circular when it is released."
+  - text: "The details will be provided in the circular upon its release."
+  - text: "We'll find the information in the circular once it is released."
+  - text: "The circular, when released, will address this matter."
+  - text: "Details about this will be available in the circular when it is released."
+
+  utter_AdmissionNoticeResponse:
+  - text: "Admission related news can be found on the official website of Sylhet Engineering College at https://www.sec.ac.bd"
+  - text: "Information regarding admissions can be located on Sylhet Engineering College's official website at https://www.sec.ac.bd"
+  - text: "To access news about admissions, visit the official website of Sylhet Engineering College at https://www.sec.ac.bd"
+  - text: "The official website of Sylhet Engineering College, https://www.sec.ac.bd, provides updates on admission-related news"
+  - text: "For admission-related updates, check out the official website of Sylhet Engineering College at https://www.sec.ac.bd"
+  - text: "Sylhet Engineering College's official website, https://www.sec.ac.bd, is the source for news related to admissions"
+
+  utter_MeritPositionResponse:
+  - text: "Merit positions 1 to 220 are selected for the first call."
+  - text: "The first call includes students who secured merit positions 1 through 220."
+  - text: "Those ranked from 1 to 220 in merit are chosen for the first call."
+  - text: "Merit positions 1 to 220 constitute the selection for the initial call."
+  - text: "Students occupying merit positions 1 through 220 are part of the first call selections."
+  - text: "The first call encompasses individuals who achieved merit positions ranging from 1 to 220."
+
+  utter_AdmissionFeeResponse:
+  - text: "The admission fee is 12000 BDT {last recorded on 2023}."
+  - text: "As of 2023, the recorded admission fee stands at 12000 BDT."
+  - text: "The admission fee, last noted in 2023, is 12000 BDT."
+  - text: "In 2023, the documented admission fee is 12000 BDT."
+  - text: "As per the 2023 records, the admission fee amounts to 12000 BDT."
+  - text: "The admission fee, last updated in 2023, is set at 12000 BDT."
+
+  utter_HallFeeReponse:
+  - text: "4500 BDT is the one time hall admission fee that will be refunded after graduation. And per semester hall fee is 1200 BDT."
+  - text: "The one-time hall admission fee is 4500 BDT, refundable upon graduation, and the per-semester hall fee is 1200 BDT."
+  - text: "A refundable one-time hall admission fee of 4500 BDT is applicable, along with a per-semester hall fee of 1200 BDT."
+  - text: "There is a 4500 BDT one-time hall admission fee, refundable upon graduation, in addition to a per-semester hall fee of 1200 BDT."
+  - text: "The hall admission fee is a one-time payment of 4500 BDT, which is refundable after graduation. The per-semester hall fee is 1200 BDT."
+  - text: "An initial hall admission fee of 4500 BDT is required, refundable upon graduation, and there is also a per-semester hall fee of 1200 BDT."
+
+  utter_CSEchanceResponse:
+  - text: "As per 2023, merit positions 1 to 90 should get CSE subject. But it depends on how tough the exam was as it varies every year"
+  - text: "According to 2023, merit positions 1 to 90 should receive the CSE subject. However, it depends on how tough the exam was, as it varies every year."
+  - text: "In 2023, merit positions 1 to 90 are estimated for the CSE subject, though it depends on the exam difficulty, which varies annually."
+  - text: "As of 2023, merit positions 1 to 90 are estimated to be allocated for the CSE subject. The actual allocation depends on the varying difficulty of the exam each year."
+  - text: "The CSE subject is assigned to be on merit positions 1 to 90 as per 2023. Nevertheless, the allocation varies yearly based on the exam's difficulty."
+  - text: "For 2023, merit positions 1 to 90 are guessed for the CSE subject. The actual distribution, however, depends on the varying difficulty of the exam each year."
+
+  utter_SECLocationResponse:
+  - text: "SEC is located in Tilaghor, Alurtol Road, Sylhet"
+  - text: "Sylhet Engineering College campus is in Alurtol Road, Tilaghor, Sylhet" 
+  - text: "SEC is situated in Tilaghor, Alurtol Road, Sylhet"
+
+  utter_SECDepartmentsResponse:
+  - text: "3 departments - CSE, EEE and CE and a non-tech department."
+  - text: "Total 3 departments - Computer Science and Engineering, Electrical and Electronic Engineering and Civil Engineering. There is also a non-tech department."
+  - text: "There are a total of 3 departments - Computer Science and Engineering, Electrical and Electronic Engineering, and Civil Engineering. Additionally, there is a non-tech department."
+  - text: "In total, there are 3 departments, including Computer Science and Engineering, Electrical and Electronic Engineering, and Civil Engineering. There's also a non-tech department."
+  - text: "The total number of departments is 3, consisting of Computer Science and Engineering, Electrical and Electronic Engineering, and Civil Engineering. There is also a non-tech department."
+  - text: "There are 3 departments in total: Computer Science and Engineering, Electrical and Electronic Engineering, and Civil Engineering. Additionally, there's a non-tech department."
+  - text: "With a total of 3 departments, including Computer Science and Engineering, Electrical and Electronic Engineering, and Civil Engineering, there is also a non-tech department."
+
+  utter_TeacherCSEResponse:
+  - text: "There are 4 permanent faculty members, including one assistant professor, one associate professor, and two lecturers. Additionally, there are adjunct faculty members. Details can be found on the official website at https://www.sec.ac.bd."
+  - text: "Currently, there are 4 permanent faculty members, consisting of one assistant professor, one associate professor, and two lecturers. Moreover, there are adjunct faculty members. Further details can be found on the official website at https://www.sec.ac.bd."
+  - text: "There are 4 permanent faculty members, namely one assistant professor, one associate professor, and two lecturers. Additionally, there are adjunct faculty members. More information is available on the official website at https://www.sec.ac.bd."
+  - text: "Currently, there are 4 permanent faculty members, which include one assistant professor, one associate professor, and two lecturers. Furthermore, there are adjunct faculty members. For additional details, please refer to the official website at https://www.sec.ac.bd."
+  - text: "There are 4 permanent faculty members, with one assistant professor, one associate professor, and two lecturers. Additionally, there are adjunct faculty members. Details can be found on the official website at https://www.sec.ac.bd."
+
+  utter_AdmissionExamResponse:
+  - text: "The initiation of the admission examination is allowed starting from July 23, 2024."
+  - text: "Starting July 23, 2024, candidates can begin the admission examination."
+  - text: "The admission examination is open for initiation beginning on July 23, 2024."
+  - text: "Starting on July 23, 2024, the admission examination can be commenced."
+  - text: "The release of the circular is scheduled for March 30, 2024."
+  - text: "The circular for 2023-2024 is set to be made public on March 30, 2024."
+  - text: "March 30, 2024, is the designated date for unveiling the circular."
+  - text: "The planned release date for the circular is March 30, 2024."
+  - text: "The circular is expected to be released on the 30th of March, 2024."
+
+  utter_CircularReleaseDateResponse:
+  - text: "The release of the circular is scheduled for March 30, 2024."
+  - text: "The circular for 2023-2024 is set to be made public on March 30, 2024."
+  - text: "March 30, 2024, is the designated date for unveiling the circular."
+  - text: "The planned release date for the circular is March 30, 2024."
+  - text: "The circular is expected to be released on the 30th of March, 2024."
+
+  utter_CircularReleaseTimeResponse:
+  - text: "The circular is typically released approximately 2 months before the exam."
+  - text: "Around 60 days prior to the exam, the circular is generally made available."
+  - text: "The release of the circular usually occurs roughly 2 months ahead of the exam."
+  - text: "Approximately 8 weeks before the exam, the circular is typically published."
+  - text: "The circular is traditionally issued about 2 months in advance of the exam."
+
+  utter_QuestionTypeResponse:
+  - text: "Typically, the questions are designed to test knowledge and have straightforward answers without multiple choices."
+  - text: "In general, the questions are knowledge-oriented and require simple, direct responses without provided options."
+  - text: "The usual question format involves assessing knowledge, seeking uncomplicated answers without the inclusion of choices."
+  - text: "Generally, questions are knowledge-focused, requiring concise responses and lacking multiple-choice options."
+  - text: "Questions in general tend to be knowledge-based, with straightforward answers and no accompanying options."
+
+  utter_QuestionBankResponse:
+  - text: "Although there isn't a separate question bank, relying on the Varsity question bank alone is sufficient for a successful completion."
+  - text: "While there is no distinct question bank, one can achieve satisfactory results by exclusively using the Varsity question bank."
+  - text: "The absence of a separate question bank is compensated by the comprehensive nature of the Varsity question bank, which is ample for successful completion."
+  - text: "Even without a separate question bank, the Varsity question bank is deemed adequate for achieving a successful outcome."
+  - text: "In the absence of a standalone question bank, the Varsity question bank stands as a satisfactory resource for successful completion."
+
+  utter_After_GSTResponse:
+  - text: "Generally, the SEC admission test begins 'around 1 month' after the conclusion of the GST admission test."
+  - text: "The SEC admission test typically starts 'around 1 month' after the conclusion of the GST admission test."
+  - text: "It is customary for the SEC admission test to commence 'around 1 month' after the conclusion of the GST admission test."
+  - text: "The standard practice is for the SEC admission test to begin 'around 1 month' after the conclusion of the GST admission test."
+  - text: "In general, 'around 1 month' elapses between the conclusion of the GST admission test and the commencement of the SEC admission test."
+
+  utter_Admission_MarksResponse:
+  - text: "To meet the required threshold, you should aim to score around 45 to 50 out of 100 marks."
+  - text: "The target range for a satisfactory score is approximately 45 to 50 out of 100 marks."
+  - text: "Achieving a score between 45 and 50 out of 100 marks is the recommended goal."
+  - text: "The expected performance level is within the range of 45 to 50 out of 100 marks."
+  - text: "To meet the standard, it is advised to aim for a score between 45 and 50 out of 100 marks."
+
+  utter_SEC_GOVTResponse:
+  - text: "Yes, Sylhet Engineering College is a government institution and affiliated with SUST."
+  - text: "Indeed, Sylhet Engineering College is a government institution and has affiliation with SUST."
+  - text: "Confirmed, Sylhet Engineering College is a government institution and is affiliated with SUST."
+  - text: "Yes, Sylhet Engineering College is a government institution and holds affiliation with SUST."
+  - text: "Affirmative, Sylhet Engineering College is a government institution and is affiliated with SUST."
+
+  utter_SEC_Study_DurationResponse:
+  - text: "It takes around 4 years to complete graduation from SEC."
+  - text: "The graduation program at SEC typically lasts about 4 years."
+  - text: "Completing graduation from SEC usually requires approximately 4 years."
+  - text: "One can expect to spend around 4 years to graduate from SEC."
+  - text: "The standard duration to complete graduation from SEC is approximately 4 years."
+
+  utter_Admission_Reading_StyleResponse:
+  - text: "Its preparation is similar to other government public universities. First of all, the results should be good, secondly, you should study well. Then there will be a chance."
+  - text: "Preparation for Sylhet Engineering College is comparable to other government public universities. First and foremost, good results are essential, and secondly, diligent study is crucial. This will increase your chances."
+  - text: "Preparing for Sylhet Engineering College is akin to other government public universities. First, achieving good results is imperative, and second, thorough studying is essential. This enhances your likelihood of success."
+  - text: "Its preparation aligns with that of other government public universities. Firstly, securing good results is crucial, and secondly, dedicated study is necessary. This paves the way for an opportunity."
+  - text: "Preparing for Sylhet Engineering College is much like other government public universities. First, achieving good results is key, and second, focused studying is vital. This will open up possibilities."
+
+  utter_SEC_ApplicationResponse:
+  - text: "The application process will be detailed in the circular upon its release."
+  - text: "Information on the application process will be provided in the circular once it is released."
+  - text: "Details about the application procedure will be available in the circular when it is released."
+  - text: "Once the circular is released, the application process will be outlined within."
+  - text: "You can find instructions for the application process in the circular upon its release."
+
+  utter_SEC_Question_TypeResponse:
+  - text: "The SEC exam primarily consists of Constructive Questions (CQ), but these questions are mostly in the format of Multiple-Choice Questions (MCQ) without options."
+  - text: "In the SEC exam, the questions are mainly Constructive Questions (CQ), but they resemble Multiple-Choice Questions (MCQ) without options."
+  - text: "CQ is the predominant format in the SEC exam, yet these questions are essentially of the Multiple-Choice (MCQ) type without provided options."
+  - text: "The SEC exam is predominantly based on Constructive Questions (CQ), with these questions resembling Multiple-Choice Questions (MCQ) without options."
+  - text: "While CQ is the primary format in the SEC exam, the questions are essentially of the Multiple-Choice (MCQ) type without options."
+
+  utter_Marks_TIMEResponse:
+  - text: "The exam is out of 100 marks with a duration of 1 hour and 30 minutes."
+  - text: "In the exam, the total marks are 100, and the allotted time is 1 hour and 30 minutes."
+  - text: "With a duration of 1 hour and 30 minutes, the exam is scored out of 100 marks."
+  - text: "The exam spans 1 hour and 30 minutes, and the total marks achievable are 100."
+  - text: "For the exam, the marking is out of 100, and the duration is set at 1 hour and 30 minutes."
+  - text: "Exam marks 100 and exam duration 1 hour 30 minutes."
+
+  utter_EEE_ChanceResponse:
+  - text: "It cannot be said for certain; it depends on how many are taking the exam and how many are getting admission."
+  - text: "It's not definite; it relies on the number of exam takers and the available admission slots."
+  - text: "It's uncertain; the outcome depends on the number of exam participants and the admission capacity."
+  - text: "There's no certainty; the situation hinges on the number of exam candidates and available admission opportunities."
+  - text: "It's indeterminate; the factors at play include the number of exam takers and the admission capacity."
+
+  utter_CE_ChanceResponse:
+  - text: "It cannot be said for certain; it depends on how many are taking the exam and how many are getting admission."
+  - text: "It's not definite; it relies on the number of exam takers and the available admission slots."
+  - text: "It's uncertain; the outcome depends on the number of exam participants and the admission capacity."
+  - text: "There's no certainty; the situation hinges on the number of exam candidates and available admission opportunities."
+  - text: "It's indeterminate; the factors at play include the number of exam takers and the admission capacity."
+
+  utter_Question_DemoResponse:
+  - text: "Yes, sure, here is a Google Drive link containing previous year questions."
+  - text: "Certainly, you can access the previous year questions through this provided Google Drive link."
+  - text: "Absolutely, you can find a collection of previous year questions in this Google Drive link."
+  - text: "Sure, feel free to check out the previous year questions in the shared Google Drive link."
+  - text: "Certainly, here is a Google Drive link where you can find questions from the previous year."
+
+  utter_English_PreparationResponse:
+  - text: "Reading the basics of English Grammar is a must."
+  - text: "It is essential to go through the fundamentals of English Grammar."
+  - text: "A must-read includes understanding the basics of English Grammar."
+  - text: "Make sure to delve into the essentials of English Grammar."
+  - text: "It is imperative to read and grasp the basics of English Grammar."
+
+  utter_Establish_dateResponse:
+  - text: "The establishment took place in the year 2007."
+  - text: "It came into existence in 2007."
+  - text: "The founding year is 2007."
+  - text: "It was established in the year 2007."
+  - text: "The establishment date is 2007."
+  - text: "It was established on 2007."
+
+  utter_TypeofCollegeResponse:
+  - text: "Sylhet Engineering College is a public undergraduate (B.Sc. Engineering) institution."
+  - text: "It functions as a public undergraduate (B.Sc. Engineering) College."
+  - text: "Sylhet Engineering College operates as a public institution for undergraduate (B.Sc. Engineering) education."
+  - text: "Sylhet Engineering College is categorized as a public undergraduate (B.Sc. Engineering) college."
+  - text: "The designation of Sylhet Engineering College is a public undergraduate (B.Sc. Engineering) institution."
+  - text: "It is a public undergraduate (B.Sc. Engineering) College."
+
+  utter_AffiliationResponse:
+  - text: "Indeed, SEC is affiliated with Shahjalal University of Science and Technology."
+  - text: "Yes, SEC maintains an affiliation with Shahjalal University of Science and Technology."
+  - text: "SEC is affiliated with Shahjalal University of Science and Technology."
+  - text: "Yes, SEC is affiliated with Shahjalal University of Science and Technology."
+
+  utter_HostelCountResponse:
+  - text: "There are two male hostels and a female hostel for students."
+  - text: "There are two halls for boys and one hall for girls."
+  - text: "There is one hall for girls and two hall for boys." 
+
+  utter_SeatCountResponse:
+  - text: "The CSE department has 60 seats, the EEE department has 60 seats, and the CE department has 60 seats. Additionally, there are 2 extra seats in each department under 2 quotas. Total 186 seats."
+  - text: "In the CSE department, there are 60 seats, in the EEE department, there are 60 seats, and in the CE department, there are 60 seats. Each department also has 2 additional seats under 2 quotas.Total 186 seats."
+  - text: "There are 60 seats in the CSE department, 60 seats in the EEE department, and 60 seats in the CE department. Furthermore, each department has 2 additional seats allocated under 2 quotas.Total 186 seats."
+  - text: "There 60 seats in CSE department, 60 seats in EEE department and 60 seats in CE department. Besides there are 2 additional seats in each department under 2 quotas. Total 186 seats."
+
+  utter_GradingSystemResponse:
+  - text: "The academic year is divided into two semesters, and the courses follow a credit system. The grading system is based on a CGPA with a maximum of 4.00, and students achieving an overall CGPA above 3.75 receive a distinction."
+  - text: "Divided into two semesters, the academic year employs a credit system for its courses. The grading system is designed around a maximum CGPA of 4.00, and students with an overall CGPA surpassing 3.75 are honored with a distinction."
+  - text: "Two semesters make up the academic year, with courses structured on a credit system. The grading system uses a CGPA scale with a maximum of 4.00, and students achieving an overall CGPA exceeding 3.75 are recognized with a distinction."
+
+  utter_Howto_arrive_in_SECResponse:
+  - text: "You can take a reserve CNG or get a pathao from anywhere in Sylhet to come to SEC. Or from either railway station or bus station, you will need to get on a local CNG that will take you to bondor. From there you can can come to Shahi Eidgah with another local CNG stand that is on jailroad. From shahi eidgah, you will need to get on another local CNG that will bring you to baluchor point. Finally, take a rickshaw that will bring you to SEC."
+
+  utter_SEC_Intro:
+  - text: "Sylhet Engineering College."
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
